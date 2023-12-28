@@ -1,3 +1,6 @@
-.texto_menu{
-    font-family: 'Diphylleia', serif;
+.fuente_texto_menu{
+    font-family: 'Montserrat', cursive;
+    /* Puedes ajustar el tamaño, el peso y otros estilos según sea necesario */
+    font-size: 1.75ex;
+    font-weight: bold;
 }
