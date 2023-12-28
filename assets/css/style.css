@@ -4,3 +4,57 @@
     font-size: 1.75ex;
     font-weight: bold;
 }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 3rem;
+    /*position: relative;*/
+    width: 100%;
+}
+
+.image{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay{
+    position: revert;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(255,255,255,0.9);
+}
+
+/*.overlay{*/
+/*    position: -ms-device-fixed;*/
+/*    top: 0;*/
+/*    bottom: 0;*/
+
+
+/*}*/
+
+
+.caption {
+    font-size: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.thumbnail:hover{
+    transform: translateY(-2px);
+}
+
+.img-container:hover .overlay{
+    opacity: 1;
+}
+
