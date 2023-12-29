@@ -1,6 +1,87 @@
-.fuente_texto_menu{
+.fuente_texto_menu {
     font-family: 'Montserrat', cursive;
     /* Puedes ajustar el tamaño, el peso y otros estilos según sea necesario */
     font-size: 1.75ex;
     font-weight: bold;
+}
+
+.wrapper {
+    padding: 0;
+    width: 100%;
+    /*height: 429px;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    width: 500px;
+    position: relative;
+}
+
+img{
+    width: 100%;
+    display: block;
+    margin:auto;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    Left: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s;
+}
+
+.content:hover {
+    opacity: 1;
+}
+.content h1 {
+    font-size: 45px;
+    color: #ffe100;
+    margin-bottom: 15px;
+}
+.content p{
+font-size: 19px ;
+color:#fff
+}
+
+.content> *{
+    transform:translateY(25px) ;
+    transition: transform 0.6s;
+}
+
+.content:hover > *{
+    transform:translateY(0px);
+}
+
+.texto_inside{
+    color: white;
+    text-decoration:none
+}
+
+.boton-personalizado {
+    text-decoration:none;
+    font-weight: 600;
+    font-size: 20px;
+    color:#000000;
+    padding-top:15px;
+    padding-bottom:15px;
+    padding-left:40px;
+    padding-right:40px;
+    background-color: transparent;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #000000;
+}
+
+.boton-personalizado:hover {
+    background-color:#000000;
 }
